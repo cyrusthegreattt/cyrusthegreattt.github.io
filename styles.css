@@ -1,23 +1,37 @@
 /* styles.css */
 
 body {
-    /* Sets the primary font to Times New Roman */
-    font-family: "Times New Roman", Times, serif;
+    /* Sets the background image and ensures it tiles/repeats */
+    background-image: url("CYRUS.gif");
+    background-repeat: repeat;
+    background-size: 128px 128px; /* Matches your image dimensions */
     
-    /* Standard readable line height and font size */
+    /* Animation: name, duration, timing, repetition */
+    animation: scrollBackground 2s linear infinite;
+
+    /* Existing Styles */
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.6;
     font-size: 18px;
-    
-    /* Optional: Sets a clean layout width */
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    color: #333;
+    color: #ffffff;
+}
+
+/* Keyframes to move the background position */
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        /* Move it by the exact width/height of the image for a seamless loop */
+        background-position: 128px 128px;
+    }
 }
 
 h1, h2, h3 {
-    /* Ensures headings also use the serif font */
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
 }
