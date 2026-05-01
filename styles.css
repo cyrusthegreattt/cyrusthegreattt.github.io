@@ -1,0 +1,23 @@
+/* styles.css */
+
+body {
+    /* Sets the primary font to Times New Roman */
+    font-family: "Times New Roman", Times, serif;
+    
+    /* Standard readable line height and font size */
+    line-height: 1.6;
+    font-size: 18px;
+    
+    /* Optional: Sets a clean layout width */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+h1, h2, h3 {
+    /* Ensures headings also use the serif font */
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #000;
+}
