@@ -35,3 +35,8 @@ h1, h2, h3 {
     font-weight: bold;
     color: #ffffff;
 }
+
+ .map-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
