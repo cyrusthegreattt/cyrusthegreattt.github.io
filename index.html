@@ -6,26 +6,17 @@
     <title>CYRUSITE</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+
 </head>
 <body>
+    <script>
+        document.addEventListener('click', () => {
+            const audio = new Audio('site.ogg');
+            audio.play();
+        }, { once: true });
+    </script>
     <h1>CYRUSITE</h1>
     <p>WELCOME TO MY WEBSITE! FULL OF CSS, HTML, AND MY SWEAT AND BLOOD!<br> I HAVE A NIFTY MAAP FOR YOU! RIGHT HERE V</p>
-
-    <div class="map-container">
-        <img src="MAP.png" usemap="#image-map">
-    </div>
-
-    <map name="image-map">
-        <area target="" alt="Go Home" title="Go Home" href="index.html" coords="74,169,64,158" shape="rect">
-        <area target="" alt="How to Contact CYRUS" title="How to Contact CYRUS" href="contacts.html" coords="66,193,55,183" shape="rect">
-        <area target="" alt="My Friends" title="My Friends" href="friends.html" coords="116,197,123,207" shape="rect">
-        <area target="" alt="My Portfolio" title="My Portfolio" href="portfolio.html" coords="81,196,91,211" shape="rect">
-        <area target="" alt="About Me" title="About Me" href="about.html" coords="75,229,82,245" shape="rect">
-        <area target="" alt="My Interests" title="My Interests" href="interests.html" coords="97,261,109,271" shape="rect">
-        <area target="" alt="My Art" title="My Art" href="art.html" coords="111,233,123,250" shape="rect">
-        <area target="" alt="The Edge" title="The Edge" href="edge.html" coords="103,298,111,306" shape="rect">
-        <area target="" alt="My Music" title="My Music" href="music.html" coords="138,277,144,285" shape="rect">
-    </map>
-
+    <div id="auto-map"></div>
 </body>
 </html>

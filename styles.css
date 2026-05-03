@@ -40,3 +40,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: center; /* Centers horizontally */
 }
+a {
+    background-color: black;
+}
